@@ -36,6 +36,13 @@
 <script type="text/javascript">
     function verifyAge() {
         let age = document.getElementById("age").value;
+        const MAJORITY = 18
+
+    if (age < MAJORITY) {
+        alert("Vous devez être majeur pour accèder au site !")
+    } else {
+        alert("Bienvenue sur le site !")
+    }
 
         // CODE HERE !
     }

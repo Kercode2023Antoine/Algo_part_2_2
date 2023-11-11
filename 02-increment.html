@@ -26,8 +26,11 @@
 </div>
 
 <script type="text/javascript">
-    function incrementNumber() {
-        let number = document.getElementById("number").value;
+    function incrementNumber() {        
+        let number = Number.parseInt(document.getElementById("number").value);
+        number += 1;
+        alert(`Votre nouveau chiffre porte bonheur et le ${number}`)
+
 
         // CODE HERE !
     }

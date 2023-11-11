@@ -22,19 +22,19 @@
     <!--Formulaire-->
     <label>Entrez la température de l'eau</label>
     <br/>
-    <input type="text" id="temperature" />
+    <input type="text" id="temperature"/>
     <button type="button" class="btn btn-primary" onclick="solidOrLiquid()">
         Solide ou liquide ?
     </button>
 </div>
 
 <script type="text/javascript">
-    const MELTING_POINT = 12;
+    const MELTING_POINT = 0;
 
     function solidOrLiquid() {
         let temperature = document.getElementById("temperature").value
 
-        if(température > MELTING_POINT) {
+        if(temperature > MELTING_POINT) {
             alert("C'est de l'eau liquide !");
         } else {
             alert("C'est de la glace !")
